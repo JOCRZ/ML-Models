@@ -17,7 +17,20 @@ if nav == 'Aim':
 
     if st.checkbox("Show Table"):
         st.table(data)
+    
+    if st.checkbox("Show Plot"):
+            
+        
+            choice = st.selectbox(
 
+            'Scatter Plot Before and After fitting Line',
+
+            ('Before','After'))
+
+            if choice == 'Before':
+                st.image("data/output1.png", width=500)
+            if choice == 'After':
+                st.image("data/output2.png", width=500)
 
 
 if nav == 'Prediction':
